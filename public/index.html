@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#123c2b">
+<meta name="description" content="CampusCycle — Your Campus. Your Marketplace. Find affordable pre-owned student essentials.">
+<title>CampusCycle — Your Campus. Your Marketplace.</title>
+<style>
+:root{--green:#155b3c;--green2:#0d402b;--mint:#dff4e8;--lime:#c9f27a;--paper:#f6f8f4;--white:#fff;--ink:#17251c;--muted:#617166;--line:#e0e8df;--red:#a72c2c;--shadow:0 12px 40px #173c2410}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.55 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}button,input,select,textarea{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,a:focus-visible{outline:3px solid #8ad26c;outline-offset:3px}button:disabled{opacity:.55;cursor:wait}.wrap{width:min(1180px,calc(100% - 40px));margin:auto}.top{background:var(--white);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}.nav{min-height:76px;display:flex;align-items:center;gap:24px}.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-weight:850;font-size:20px;letter-spacing:-.6px;white-space:nowrap}.mark{display:grid;place-items:center;width:42px;height:42px;border-radius:13px;background:var(--green);color:var(--lime);font-size:23px}.brand small{display:block;color:var(--muted);font-size:10px;letter-spacing:1.1px;text-transform:uppercase}.navlinks{margin-left:auto;display:flex;align-items:center;gap:6px}.navlinks a{padding:10px 12px;border-radius:11px;color:#405247;text-decoration:none;font-weight:650;font-size:13px}.navlinks a:hover{background:var(--mint);color:var(--green)}.button{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid var(--line);border-radius:12px;padding:11px 16px;background:var(--white);color:var(--ink);font-weight:750;text-decoration:none;transition:transform .15s,background .15s}.button:hover{transform:translateY(-1px)}.primary{background:var(--green);color:white;border-color:var(--green)}.primary:hover{background:var(--green2)}.accent{background:var(--lime);color:var(--green2);border-color:var(--lime)}.ghost{background:transparent}.hero{margin:28px auto 22px;padding:40px;border-radius:27px;background:linear-gradient(120deg,#0d402b,#1a6443);color:#fff;position:relative;overflow:hidden;display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center}.hero:after{content:"";position:absolute;width:440px;height:440px;border:1px solid #ffffff16;border-radius:50%;right:-80px;top:-210px;box-shadow:0 0 0 38px #ffffff06,0 0 0 80px #ffffff04;pointer-events:none}.eyebrow{font-size:11px;font-weight:850;letter-spacing:1.8px;text-transform:uppercase;color:#a8e4b9}.hero h1{font-size:clamp(35px,4vw,58px);line-height:1.04;letter-spacing:-2.3px;margin:13px 0 17px;max-width:700px}.hero h1 em{font-style:normal;color:var(--lime)}.hero p{color:#d0e5d6;max-width:590px;font-size:15px;margin:0 0 24px}.herobuttons{display:flex;flex-wrap:wrap;gap:10px}.hero-art{z-index:1;display:grid;place-items:center;min-height:215px}.orbit{width:230px;height:230px;border-radius:50%;background:#e5f4dc;display:grid;place-items:center;box-shadow:0 20px 55px #071f1545;transform:rotate(5deg)}.orbit .emoji{font-size:104px;filter:drop-shadow(0 12px 9px #123c2b20)}.floating{position:absolute;background:#fff;color:var(--green);padding:11px 15px;border-radius:13px;font-size:12px;font-weight:850;box-shadow:var(--shadow)}.float-a{top:20px;right:24px;transform:rotate(3deg)}.float-b{bottom:22px;left:10px;transform:rotate(-4deg)}.stats{display:flex;gap:24px;margin-top:24px;color:#d0e5d6;font-size:12px}.stats strong{display:block;color:white;font-size:19px}.section{padding:24px 0 38px;scroll-margin-top:92px}.sectionhead{display:flex;align-items:end;justify-content:space-between;gap:18px;margin-bottom:18px}.sectionhead h2{font-size:26px;letter-spacing:-.8px;line-height:1.15;margin:0}.sectionhead p{margin:6px 0 0;color:var(--muted);font-size:13px}.pill{display:inline-flex;background:var(--mint);color:var(--green);border-radius:30px;padding:5px 10px;font-size:11px;font-weight:800}.filters{padding:15px;background:white;border:1px solid var(--line);border-radius:18px;display:grid;grid-template-columns:2fr repeat(5,minmax(105px,1fr));gap:9px;margin-bottom:20px;box-shadow:var(--shadow)}input,select,textarea{width:100%;min-width:0;border:1px solid #dce5db;border-radius:11px;background:white;color:var(--ink);padding:11px 12px}input::placeholder,textarea::placeholder{color:#8a998e}label{display:block;color:#4d5f52;font-size:12px;font-weight:750}label input,label select,label textarea{display:block;margin-top:6px;font-weight:400}.filter-actions{display:flex;gap:9px;align-items:center;justify-content:space-between;flex-wrap:wrap}.filter-actions select{width:auto}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.card{background:white;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 5px 22px #173c2408;display:flex;flex-direction:column;min-width:0;transition:transform .18s,box-shadow .18s}.card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}.art{height:152px;display:grid;place-items:center;background:linear-gradient(140deg,#e4f3e7,#f2f6dd);position:relative}.art span{font-size:60px}.art:after{content:"CAMPUSCYCLE FIND";position:absolute;bottom:9px;left:12px;font-size:9px;font-weight:850;letter-spacing:1.4px;color:#77917d}.cardbody{padding:17px;display:flex;flex-direction:column;flex:1}.card h3{margin:7px 0 5px;font-size:17px;line-height:1.3;overflow-wrap:anywhere}.price{font-size:23px;font-weight:900;letter-spacing:-.6px;color:var(--green);margin:5px 0}.meta{font-size:12px;color:var(--muted);overflow-wrap:anywhere}.desc{font-size:13px;color:#596b5d;margin:10px 0 15px;overflow-wrap:anywhere;flex:1}.cardfoot{display:flex;align-items:center;justify-content:space-between;gap:8px;border-top:1px solid var(--line);padding-top:12px}.cardfoot button{font-size:12px;padding:9px 12px}.empty{grid-column:1/-1;padding:40px 18px;text-align:center;background:white;border:1px dashed #b8cbbb;border-radius:18px}.empty .emoji{font-size:44px}.empty h3{margin:8px 0}.empty p{color:var(--muted)}.panel{padding:24px;border:1px solid var(--line);border-radius:20px;background:white;box-shadow:var(--shadow)}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:15px}.fieldwide{grid-column:1/-1}textarea{resize:vertical;min-height:94px}.formactions{display:flex;gap:10px;flex-wrap:wrap;margin-top:17px}.help{color:var(--muted);font-size:12px}.notice{border-radius:11px;background:#e4f7e9;color:#155b3c;padding:12px 14px;margin:12px 0}.error{border-radius:11px;background:#fff0ee;color:var(--red);padding:12px 14px;margin:12px 0}.hidden{display:none!important}.faqgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.faqitem{background:white;border:1px solid var(--line);border-radius:14px;overflow:hidden}.faqitem summary{padding:15px 17px;font-weight:800;cursor:pointer}.faqitem p{padding:0 17px 16px;margin:0;color:var(--muted);font-size:13px}.chat-layout{display:grid;grid-template-columns:.75fr 1.25fr;gap:20px}.chat-side{background:var(--green);color:white;border-radius:18px;padding:25px}.chat-side p{color:#d2e6d7}.promptlist{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}.promptlist button{font-size:12px;background:#ffffff12;color:#fff;border:1px solid #ffffff30;border-radius:30px;padding:8px 11px}.chatbox{display:flex;flex-direction:column;min-height:400px;padding:0;overflow:hidden}.chathead{padding:16px 18px;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:10px}.chathead .mark{width:34px;height:34px}.chathead small{display:block;color:var(--muted);font-size:11px}.messages{padding:17px;flex:1;min-height:240px;max-height:440px;overflow:auto;display:flex;flex-direction:column;gap:12px}.bubble{max-width:93%;padding:11px 13px;background:#f0f5ef;border-radius:13px 13px 13px 3px;font-size:13px;white-space:pre-wrap;overflow-wrap:anywhere}.bubble.user{align-self:flex-end;background:#dff4e8;border-radius:13px 13px 3px 13px}.bubble .recommend{display:block;width:100%;margin-top:8px;padding:9px 10px;text-align:left;background:#fff;border:1px solid var(--line);border-radius:9px;color:var(--green);font-size:12px}.chatform{display:flex;gap:8px;padding:12px;border-top:1px solid var(--line)}.chatform input{flex:1}.chatform button{white-space:nowrap}.footnote{font-size:11px;color:var(--muted);padding:0 16px 13px}.details{margin-top:18px;padding:23px;background:white;border:1px solid var(--line);border-radius:18px;display:grid;grid-template-columns:.7fr 1.3fr;gap:22px}.details .art{height:240px;border-radius:13px}.details h3{font-size:25px;margin:8px 0}.details .price{font-size:32px}.seller{padding:12px;background:#f4f7f2;border:1px solid var(--line);border-radius:12px;margin:14px 0;overflow-wrap:anywhere}.seller small{display:block;color:var(--muted)}.footer{margin-top:30px;background:#102f22;color:#d2e6d7;padding:26px 0}.footer-inner{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;font-size:12px}.footer a{color:#d2e6d7}.status{font-size:12px;color:var(--muted);margin:0 0 12px}
+@media(max-width:1000px){.nav{gap:10px}.navlinks{gap:0}.navlinks a{padding:9px 8px}.filters{grid-template-columns:repeat(3,minmax(0,1fr))}.filters .searchfield{grid-column:span 3}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{padding:30px}.orbit{width:190px;height:190px}.orbit .emoji{font-size:85px}}
+@media(max-width:650px){.wrap{width:calc(100% - 26px)}.nav{min-height:66px;flex-wrap:wrap;padding:10px 0}.brand{font-size:17px}.mark{width:36px;height:36px}.navlinks{width:100%;overflow-x:auto;order:3;margin:0}.navlinks a{white-space:nowrap;font-size:12px}.nav>.button{margin-left:auto;padding:9px 11px;font-size:12px}.hero{grid-template-columns:1fr;padding:23px;margin-top:17px;gap:10px}.hero h1{font-size:39px;letter-spacing:-1.8px}.hero p{font-size:14px}.hero-art{display:none}.float-a,.float-b{display:none}.stats{gap:18px}.section{padding:20px 0 28px}.sectionhead{align-items:flex-start}.sectionhead h2{font-size:22px}.filters{grid-template-columns:1fr 1fr;padding:11px}.filters .searchfield{grid-column:1/-1}.grid{grid-template-columns:1fr;gap:13px}.art{height:140px}.cardbody{padding:15px}.formgrid,.faqgrid,.chat-layout,.details{grid-template-columns:1fr}.panel{padding:17px}.fieldwide{grid-column:auto}.details{padding:15px}.details .art{height:180px}.chat-side{padding:18px}.chatbox{min-height:380px}.chatform{padding:9px}.chatform .button{padding:10px 12px}.filter-actions{align-items:stretch}.filter-actions select{width:100%}.footer-inner{flex-direction:column}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap nav">
+<a class="brand" href="#top" aria-label="CampusCycle home"><span class="mark">↻</span><span>CampusCycle<small>Your Campus. Your Marketplace.</small></span></a>
+<nav class="navlinks" aria-label="Main navigation"><a href="#browse">Browse</a><a href="#sell">Sell an Item</a><a href="#faq">FAQ</a><a href="#assistant">AI Assistant</a><a href="#feedback">Feedback</a></nav>
+<a class="button primary" href="#sell">＋ List an item</a>
+</div></header>
+<main id="top" class="wrap">
+<section class="hero">
+<div><div class="eyebrow">A smarter student marketplace</div><h1>Your campus.<br><em>Your marketplace.</em></h1><p>Find affordable books, calculators, electronics, hostel essentials and more. Give good things a second home — and keep your student budget on track.</p>
+<div class="herobuttons"><a class="button accent" href="#browse">Explore available items ↗</a><a class="button ghost" href="#sell" style="color:white;border-color:#ffffff55">Sell something</a></div>
+<div class="stats"><div><strong id="statCount">…</strong>active listings</div><div><strong>₹</strong>student-friendly prices</div><div><strong>0</strong>platform fees</div></div>
+</div>
+<div class="hero-art" aria-hidden="true"><div class="orbit"><span class="emoji">📚</span></div><div class="floating float-a">♻ Buy pre-loved</div><div class="floating float-b">🎓 Made for campus life</div></div>
+</section>
+<div id="pageMessage" class="hidden" role="alert"></div>
+<section id="browse" class="section">
+<div class="sectionhead"><div><span class="pill">EXPLORE</span><h2 style="margin-top:9px">Find your next good thing</h2><p>Real listings from the CampusCycle marketplace, newest first.</p></div><button id="refreshBtn" class="button">↻ Refresh</button></div>
+<div class="filters" aria-label="Listing filters">
+<div class="searchfield"><label for="search">Search products</label><input id="search" type="search" maxlength="100" placeholder="Try “calculator”, “textbook” or “headphones”"></div>
+<div><label for="categoryFilter">Category</label><select id="categoryFilter"><option value="">All categories</option></select></div>
+<div><label for="minPrice">Min ₹</label><input id="minPrice" type="number" min="0" step="1" placeholder="0"></div>
+<div><label for="maxPrice">Max ₹</label><input id="maxPrice" type="number" min="0" step="1" placeholder="No limit"></div>
+<div><label for="conditionFilter">Condition</label><select id="conditionFilter"><option value="">Any condition</option><option>New</option><option>Like New</option><option>Good</option><option>Used</option></select></div>
+<div><label for="collegeFilter">College</label><input id="collegeFilter" maxlength="120" placeholder="Optional"></div>
+<div><label for="locationFilter">Location</label><input id="locationFilter" maxlength="80" placeholder="Optional"></div>
+</div>
+<div class="filter-actions"><p id="resultsText" class="status" aria-live="polite">Loading available listings…</p><button id="clearFilters" class="button">Clear filters</button></div>
+<div id="listingGrid" class="grid" aria-live="polite"><div class="empty"><span class="emoji">⏳</span><p>Loading listings…</p></div></div>
+<div id="detailView" class="details hidden" aria-live="polite"></div>
+</section>
+<section id="sell" class="section">
+<div class="sectionhead"><div><span class="pill">SELL</span><h2 style="margin-top:9px">List an item</h2><p>Give your unused student essentials a new home.</p></div></div>
+<form id="sellForm" class="panel">
+<div class="formgrid">
+<label>Item title *<input name="title" required maxlength="80" placeholder="e.g. Casio scientific calculator"></label>
+<label>Price in ₹ *<input name="price" type="number" min="0" step="0.01" required placeholder="e.g. 650"></label>
+<label>Category<select name="category" id="sellCategory"></select></label>
+<label>Condition<select name="condition" required><option>Good</option><option>New</option><option>Like New</option><option>Used</option></select></label>
+<label class="fieldwide">Description<textarea name="description" maxlength="1000" placeholder="Add useful details, model, wear or included accessories."></textarea><small class="help">Up to 1,000 characters. Describe the item honestly.</small></label>
+<label>Location<input name="location" maxlength="80" placeholder="e.g. Coimbatore"></label>
+<label>College (optional)<input name="college" maxlength="120" placeholder="College name"></label>
+<label class="fieldwide">Seller contact *<input name="contact" required maxlength="80" placeholder="Contact details you are comfortable sharing"><small class="help">Your contact is visible to anyone viewing the listing. Do not post sensitive information.</small></label>
+</div>
+<div id="sellError" class="error hidden" role="alert"></div><div id="sellSuccess" class="notice hidden" role="status"></div>
+<div class="formactions"><button id="publishBtn" class="button primary" type="submit">Publish listing ↗</button><button id="cancelSell" class="button" type="reset">Clear form</button></div>
+<p class="help">No payment processing, account system or verified student identity is provided.</p>
+</form>
+</section>
+<section id="faq" class="section">
+<div class="sectionhead"><div><span class="pill">HELP CENTRE</span><h2 style="margin-top:9px">Frequently asked questions</h2><p>What to know before buying or selling on CampusCycle.</p></div></div>
+<div id="faqList" class="faqgrid"></div>
+</section>
+<section id="assistant" class="section">
+<div class="sectionhead"><div><span class="pill">RULE-BASED ASSISTANT</span><h2 style="margin-top:9px">Meet the CampusCycle assistant</h2><p>Ask naturally about listings. No API key, paid AI service, or external AI request is used.</p></div></div>
+<div class="chat-layout">
+<aside class="chat-side"><div class="eyebrow">Your smart shopping helper</div><h3>Not sure where to start?</h3><p>Tell the assistant what you need, your budget, preferred condition or campus location. It will search actual available listings and explain matches.</p>
+<div class="promptlist"><button type="button" data-prompt="Find a calculator under ₹700">Calculator under ₹700</button><button type="button" data-prompt="Show books below ₹300">Books below ₹300</button><button type="button" data-prompt="What can I buy for my hostel?">Hostel essentials</button><button type="button" data-prompt="Can I pay online?">Payment question</button><button type="button" data-prompt="How can I sell my calculator?">Selling help</button></div>
+</aside>
+<div class="panel chatbox">
+<div class="chathead"><span class="mark">✦</span><div><strong>CampusCycle Assistant</strong><small id="assistantStatus">Searching your local listings · no API key required</small></div></div>
+<div id="messages" class="messages" role="log" aria-live="polite"><div class="bubble">Hi! Tell me what you’re looking for and your budget. I can search available listings and answer questions about using CampusCycle.</div></div>
+<form id="chatForm" class="chatform"><input id="chatInput" maxlength="1000" required placeholder="Ask: Find a bicycle below ₹2,000" aria-label="Message the CampusCycle assistant"><button id="sendBtn" class="button primary" type="submit">Send ↑</button></form>
+<div class="footnote">The assistant uses deterministic rules and current JSON listings, not a generative AI model. Verify details with sellers.</div>
+</div></div>
+</section>
+<section id="feedback" class="section">
+<div class="sectionhead"><div><span class="pill">FEEDBACK</span><h2 style="margin-top:9px">Help us improve CampusCycle</h2><p>Your feedback is stored before the app reports success.</p></div></div>
+<form id="feedbackForm" class="panel">
+<div class="formgrid">
+<label>Rating (optional)<select name="rating"><option value="">Skip rating</option><option value="5">5 — Excellent</option><option value="4">4 — Good</option><option value="3">3 — Okay</option><option value="2">2 — Poor</option><option value="1">1 — Very poor</option></select></label>
+<label>Category<select name="category" required><option>Suggestion</option><option>Bug report</option><option>Usability</option><option>Other</option></select></label>
+<label class="fieldwide">Message<textarea name="message" required maxlength="1000" placeholder="What worked well, or what should we improve?"></textarea></label>
+</div>
+<div id="feedbackError" class="error hidden" role="alert"></div><div id="feedbackSuccess" class="notice hidden" role="status"></div>
+<div class="formactions"><button id="feedbackBtn" class="button primary" type="submit">Send feedback</button></div>
+</form>
+</section>
+</main>
+<footer class="footer"><div class="wrap footer-inner"><span>↻ <strong>CampusCycle</strong> · Your Campus. Your Marketplace.</span><span>Buy thoughtfully. Sell honestly. Meet safely.</span><span>Student demo · No payments or student verification</span></div></footer>
+<script>
+'use strict';
+const $ = id => document.getElementById(id);
+const money = value => new Intl.NumberFormat('en-IN',{style:'currency',currency:'INR',maximumFractionDigits:0}).format(value);
+const CATEGORIES = ['Books & Study Materials','Electronics','Calculators','Cycles & Transport','Hostel Essentials','Clothing & Accessories','Sports Equipment','Project Materials','Other'];
+const ICONS = {'Books & Study Materials':'📚','Electronics':'🎧','Calculators':'🧮','Cycles & Transport':'🚲','Hostel Essentials':'🛏️','Clothing & Accessories':'🎒','Sports Equipment':'🏸','Project Materials':'🔧','Other':'♻️'};
+const FAQ = [
+['What is CampusCycle?','CampusCycle is a student-focused marketplace for browsing and listing pre-owned books, calculators, electronics, cycles, hostel essentials and other student-related products.'],
+['Who can use it?','It is designed for college and university students and hostel residents. Student identity and college affiliation are not verified in this initial version.'],
+['How do I search for products?','Use the product search field. Search checks listing titles and descriptions. You can combine it with category, price, condition, college and location filters.'],
+['How do filters work?','All selected filters apply together. Use Clear filters to remove them and see every active listing again.'],
+['How do I sell an item?','Complete the listing form with a title, valid price and seller contact. Add condition, description and location, then publish. The listing appears only after the server confirms it saved.'],
+['How do I contact a seller?','Open a listing and review the seller contact provided. Arrange communication and a safe exchange directly with the seller.'],
+['How do I mark an item as sold?','Open the listing details, select Mark as Sold and confirm. It will no longer appear in active browse results. This first version has no account-based ownership system.'],
+['Does CampusCycle process payments?','No. There is no checkout, payment processor or escrow. Buyers and sellers arrange transactions independently.'],
+['How can I stay safe buying used items?','Meet in a public place, inspect and test the item before paying, protect personal details and avoid advance payments. CampusCycle does not guarantee sellers or transactions.'],
+['Are students verified?','No. Student identity or college affiliation is not verified. Treat the information in listings as seller-provided and verify it yourself.'],
+['Why did a listing disappear?','Sold listings are hidden from active results. Filters may also exclude a listing. Clear filters, refresh and try again.'],
+['What if listing information is incorrect?','Ask the seller to clarify before proceeding. This version does not include a moderation or reporting workflow, so independently verify claims.']
+];
+let listings = [];
+let isLoading = false;
+function setMessage(id, text, isError) { const box = $(id); box.textContent = text; box.classList.toggle('hidden', !text); if (isError !== undefined) { box.classList.toggle('error',isError); box.classList.toggle('notice',!isError); } }
+async function api(url, options) {
+  const response = await fetch(url, options || {});
+  let data;
+  try { data = await response.json(); } catch { throw new Error('The server returned an unreadable response. Refresh and try again.'); }
+  if (!response.ok) throw new Error(data && data.error && data.error.message ? data.error.message : 'Request failed with HTTP ' + response.status + '.');
+  return data;
+}
+function jsonOptions(body) { return {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)}; }
+function addFaq() {
+  const list = $('faqList');
+  FAQ.forEach(pair => {
+    const item = document.createElement('details'); item.className = 'faqitem';
+    const summary = document.createElement('summary'); summary.textContent = pair[0];
+    const answer = document.createElement('p'); answer.textContent = pair[1];
+    item.append(summary,answer); list.append(item);
+  });
+}
+function populateCategories() {
+  for (const c of CATEGORIES) {
+    for (const id of ['categoryFilter','sellCategory']) {
+      const option = document.createElement('option'); option.value = c; option.textContent = c; $(id).append(option);
+    }
+  }
+}
+function el(tag, className, text) { const node = document.createElement(tag); if (className) node.className = className; if (text !== undefined) node.textContent = text; return node; }
+function makeEmpty(title, description) {
+  const div = el('div','empty'); div.append(el('span','emoji','🌱'),el('h3','',title),el('p','',description));
+  const button = el('button','button primary','＋ List an item'); button.type = 'button'; button.addEventListener('click',()=>$('sell').scrollIntoView({behavior:'smooth'})); div.append(button); return div;
+}
+function renderCards() {
+  const grid = $('listingGrid'); grid.replaceChildren();
+  $('statCount').textContent = String(listings.length);
+  $('resultsText').textContent = listings.length + ' active ' + (listings.length===1?'listing':'listings') + ' · newest first';
+  if (!listings.length) { grid.append(makeEmpty('No matches yet','Try a different search or clear filters. Only real listings are shown.')); return; }
+  for (const item of listings) {
+    const card = el('article','card');
+    const art = el('div','art'); art.append(el('span','',ICONS[item.category] || '♻️')); art.setAttribute('aria-hidden','true');
+    const body = el('div','cardbody');
+    body.append(el('span','pill',item.category || 'Other'),el('h3','',item.title),el('div','price',money(item.price)),el('div','meta',(item.condition || 'Good')+' · '+(item.location || 'Location not specified')));
+    body.append(el('p','desc',item.description || 'No description provided.'));
+    const foot = el('div','cardfoot');
+    foot.append(el('span','meta',item.college || 'Campus community'));
+    const detail = el('button','button primary','View details ↗'); detail.type = 'button'; detail.addEventListener('click',()=>showDetails(item.id));
+    foot.append(detail); body.append(foot); card.append(art,body); grid.append(card);
+  }
+}
+async function loadItems() {
+  if (isLoading) return;
+  isLoading = true;
+  $('refreshBtn').disabled = true; $('resultsText').textContent = 'Loading listings…';
+  const params = new URLSearchParams();
+  const values = {q:$('search').value.trim(),category:$('categoryFilter').value,minPrice:$('minPrice').value.trim(),maxPrice:$('maxPrice').value.trim(),condition:$('conditionFilter').value,college:$('collegeFilter').value.trim(),location:$('locationFilter').value.trim()};
+  Object.keys(values).forEach(key=>{if(values[key] !== '') params.set(key,values[key]);});
+  try {
+    listings = await api('/api/items?' + params.toString());
+    setMessage('pageMessage','',false); renderCards();
+  } catch (error) {
+    $('listingGrid').replaceChildren(makeEmpty('Listings are temporarily unavailable',error.message));
+    $('resultsText').textContent = 'Could not load listings'; setMessage('pageMessage','Marketplace data could not be loaded. Please retry.',true);
+  } finally { isLoading = false; $('refreshBtn').disabled = false; }
+}
+function showDetails(id) {
+  const item = listings.find(entry=>entry.id === id);
+  if (!item) { setMessage('pageMessage','That item is no longer in the active list. Refresh and try again.',true); return; }
+  const panel = $('detailView'); panel.replaceChildren();
+  const art = el('div','art'); art.append(el('span','',ICONS[item.category] || '♻️'));
+  const body = el('div','');
+  body.append(el('span','pill',item.category || 'Other'),el('h3','',item.title),el('div','price',money(item.price)));
+  body.append(el('p','meta',(item.condition || 'Good')+' · '+(item.location || 'Location not specified')+' · Listed '+new Date(item.createdAt).toLocaleDateString()));
+  if (item.college) body.append(el('p','meta','College: '+item.college));
+  body.append(el('p','',item.description || 'No description provided.'));
+  const seller = el('div','seller'); seller.append(el('small','','Seller contact'),el('strong','',item.contact || 'Not provided')); body.append(seller);
+  const actions = el('div','formactions');
+  const back = el('button','button','← Close details'); back.type='button'; back.addEventListener('click',()=>{panel.classList.add('hidden');panel.replaceChildren();});
+  const sold = el('button','button primary','Mark as Sold'); sold.type='button';
+  sold.addEventListener('click',async()=>{
+    if (!window.confirm('Mark "'+item.title+'" as sold? This removes it from active browse results.')) return;
+    sold.disabled = true; sold.textContent='Saving…';
+    try { await api('/api/items/'+encodeURIComponent(item.id)+'/sold',{method:'POST'}); setMessage('pageMessage','Listing marked as sold.',false); panel.classList.add('hidden'); await loadItems(); }
+    catch(error) { setMessage('pageMessage',error.message,true); sold.disabled=false; sold.textContent='Mark as Sold'; }
+  });
+  actions.append(back,sold); body.append(actions); panel.append(art,body); panel.classList.remove('hidden'); panel.scrollIntoView({behavior:'smooth',block:'start'});
+}
+function debounce(fn, wait) { let timer; return () => { clearTimeout(timer); timer=setTimeout(fn,wait); }; }
+async function submitListing(event) {
+  event.preventDefault(); setMessage('sellError','',true); setMessage('sellSuccess','',false);
+  const form = $('sellForm'); const data = Object.fromEntries(new FormData(form));
+  data.price = Number(data.price);
+  if (!Number.isFinite(data.price) || data.price < 0) { setMessage('sellError','Enter a valid price of zero or more.',true); return; }
+  const button=$('publishBtn'); button.disabled=true; button.textContent='Publishing…';
+  try {
+    const item=await api('/api/items',jsonOptions(data));
+    form.reset(); setMessage('sellSuccess','Your listing was published successfully. It is now available to browse.',false);
+    await loadItems(); showDetails(item.id);
+  } catch(error) { setMessage('sellError',error.message+' Your form entries have been kept so you can correct them.',true); }
+  finally { button.disabled=false; button.textContent='Publish listing ↗'; }
+}
+function addBubble(text, user) { const bubble=el('div','bubble'+(user?' user':''),text); $('messages').append(bubble); $('messages').scrollTop=$('messages').scrollHeight; return bubble; }
+let assistantSending=false;
+async function sendAssistant(raw) {
+  const message=String(raw || '').trim();
+  if (!message || assistantSending) return;
+  assistantSending=true; $('chatInput').value=''; addBubble(message,true);
+  const pending=addBubble('Searching current listings…',false); $('sendBtn').disabled=true;
+  try {
+    const result=await api('/api/assistant',jsonOptions({message}));
+    pending.textContent=result.message || 'Here is what I found.';
+    if (Array.isArray(result.items)) result.items.forEach(item=>{
+      const b=el('button','recommend',item.title+' · '+money(item.price)+' · '+item.condition);
+      b.type='button'; b.addEventListener('click',()=>{const visible=listings.find(x=>x.id===item.id); if(visible) showDetails(item.id); else { $('search').value=item.title; loadItems().then(()=>showDetails(item.id)); }});
+      pending.append(b);
+    });
+    if (Array.isArray(result.suggestions) && result.suggestions.length) {
+      const row=el('div','promptlist');
+      result.suggestions.slice(0,3).forEach(s=>{const b=el('button','',s);b.type='button';b.addEventListener('click',()=>sendAssistant(s));row.append(b);});
+      pending.append(row);
+    }
+  } catch(error) { pending.textContent='I could not search the listings: '+error.message+'. Please try again.'; pending.classList.add('error'); }
+  finally { assistantSending=false; $('sendBtn').disabled=false; $('messages').scrollTop=$('messages').scrollHeight; }
+}
+async function submitFeedback(event) {
+  event.preventDefault(); setMessage('feedbackError','',true);setMessage('feedbackSuccess','',false);
+  const form=$('feedbackForm');const values=Object.fromEntries(new FormData(form));
+  if (values.rating==='') delete values.rating; else values.rating=Number(values.rating);
+  const button=$('feedbackBtn');button.disabled=true;button.textContent='Sending…';
+  try { const result=await api('/api/feedback',jsonOptions(values));setMessage('feedbackSuccess',result.message || 'Feedback saved. Thank you.',false);form.reset(); }
+  catch(error) { setMessage('feedbackError',error.message+' Your feedback has been kept.',true); }
+  finally { button.disabled=false;button.textContent='Send feedback'; }
+}
+populateCategories();addFaq();
+$('refreshBtn').addEventListener('click',loadItems);
+$('clearFilters').addEventListener('click',()=>{['search','minPrice','maxPrice','collegeFilter','locationFilter','categoryFilter','conditionFilter'].forEach(id=>$(id).value='');loadItems();});
+['search','minPrice','maxPrice','collegeFilter','locationFilter'].forEach(id=>$(id).addEventListener(id==='search'?'input':'change',debounce(loadItems,250)));
+['categoryFilter','conditionFilter'].forEach(id=>$(id).addEventListener('change',loadItems));
+$('sellForm').addEventListener('submit',submitListing);
+$('cancelSell').addEventListener('click',()=>{setMessage('sellError','',true);setMessage('sellSuccess','',false);});
+$('chatForm').addEventListener('submit',event=>{event.preventDefault();sendAssistant($('chatInput').value);});
+document.querySelectorAll('[data-prompt]').forEach(button=>button.addEventListener('click',()=>sendAssistant(button.dataset.prompt)));
+$('feedbackForm').addEventListener('submit',submitFeedback);
+loadItems();
+</script>
+</body>
+</html>
