@@ -1,4 +1,4 @@
-Live website: PENDING DEPLOYMENT
+Live website: https://campuscycle-2jcd.onrender.com
 
 # CampusCycle — Student Marketplace with AI Assistant
 
@@ -7,7 +7,7 @@ Live website: PENDING DEPLOYMENT
 CampusCycle is a student-focused secondhand marketplace for affordable pre-owned items. It uses Node.js, Express, HTML, CSS, vanilla JavaScript and JSON-file storage. Its rule-based assistant uses deterministic keyword matching and actual listings. It requires NO AI API key, makes no external AI-service call, and is not a generative language model.
 
 **GitHub:** https://github.com/guruvelah/Hari-Prasath-campus-cycle  
-**Live HTTPS URL:** PENDING DEPLOYMENT
+**Live HTTPS URL:** https://campuscycle-2jcd.onrender.com
 
 ## Problem and objectives
 
@@ -218,7 +218,7 @@ At the time this README is authored:
 - Source has been committed to this repository.
 - The project was previously tested locally using an Express-compatible test shim; that does not replace a clean npm install with real Express.
 - Browser automation and Render live tests are not verified.
-- The live URL remains PENDING DEPLOYMENT until the actual Render URL is obtained.
+- Render reports the first deployment as LIVE at https://campuscycle-2jcd.onrender.com. Endpoint-by-endpoint live smoke tests remain NOT VERIFIED.
 
 ## Viva preparation
 
@@ -258,7 +258,7 @@ At the time this README is authored:
 9. [ ] Security checks and .gitignore are reviewed. — **NOT VERIFIED in target repository**
 10. [ ] Monitoring, logging, and feedback work. — **NOT VERIFIED in target repository**
 11. [ ] GitHub repository and README are updated. — **PASS**
-12. [ ] Render deployment and live tests are verified. — **NOT VERIFIED**
+12. [ ] Render deployment and live tests are verified. — **NOT VERIFIED** (Render deployment is LIVE; endpoint-by-endpoint checks remain pending).
 
 ## Submission status
 
@@ -266,5 +266,5 @@ At the time this README is authored:
 - Live website link (HTTPS): PENDING DEPLOYMENT
 - GitHub repository: https://github.com/guruvelah/Hari-Prasath-campus-cycle
 - Assistant: rule-based, no API key and no external AI dependency.
-- Live deployment and live test results: NOT VERIFIED.
+- Live deployment: Render reports status LIVE at https://campuscycle-2jcd.onrender.com. Live API/browser smoke test results: NOT VERIFIED.
 - Old Docker service: not deleted or modified.
